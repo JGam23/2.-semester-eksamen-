@@ -155,7 +155,7 @@
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 0;
 }
 .pattern img {
     height: 225px;
@@ -167,7 +167,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 1;
     width:100%;
 }
 
