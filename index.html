@@ -61,7 +61,8 @@
                     <img src="images/kodestrib.png" alt="pattern">
                 </div>
 
-                <div class="slideshow">
+            <div class="slideshow">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
                 <div class="image-container">
                     <div class="image-box">
                         <img src="images/gert.jpg">
@@ -108,7 +109,8 @@
                         <div class="text-strip">Nikolaj Nielsen, Consultant</div>
                     </div>
                 </div>
-                </div>  
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>  
             </div>
 
             <br>
@@ -176,8 +178,9 @@
             </div>
         </div>
     </footer>
-    <script src="javascript/videoloop.js" defer></script>
 </footer>
 
+<script src="javascript/videoloop.js" defer></script>
+<script src="javascript/slideshow.js" defer></script>
 
 </html>

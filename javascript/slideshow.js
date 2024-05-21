@@ -1,18 +1,30 @@
-const slideshow = document.querySelector('.slideshow');
-const imageBoxes = document.querySelectorAll('.image-box');
-let currentIndex = 0;
+let slideIndex = 0;
+const slides = Array.from(document.querySelectorAll('.image-box')); // Convert NodeList to Array
+const slidesToShow = 3;
 
-function showImage(index) {
-    imageBoxes.forEach((box, i) => {
-        box.style.display = i === index ? 'block' : 'none';
+function showSlides() {
+    slides.forEach((slide, index) => {
+        if (index >= slideIndex && index < slideIndex + slidesToShow) {
+            slide.style.display = 'flex';
+        } else {
+            slide.style.display = 'none';
+        }
     });
 }
 
-function nextImage() {
-    currentIndex = (currentIndex + 1) % imageBoxes.length;
-    showImage(currentIndex);
+function moveSlide(n) {
+    slideIndex += n;
+    if (slideIndex < 0) {
+        slideIndex = slides.length - slidesToShow;
+    } else if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    }
+    showSlides();
 }
 
-// Start slideshow
-showImage(currentIndex);
-setInterval(nextImage, 3000);
+// Event listeners for buttons
+document.querySelector('.prev').addEventListener('click', () => moveSlide(-1));
+document.querySelector('.next').addEventListener('click', () => moveSlide(1));
+
+// Initialize the slideshow
+showSlides();
