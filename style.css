@@ -217,12 +217,13 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 60px;
+    height: 30px;
     background-color: #DCEBF7;
-    color: #03383C;
+    color: #000000;
     text-align: center;
     line-height: 30px;
-    font-size: 16px;
+    font-size: 14px;
+    opacity: 0.8;
 }
 
 button.prev, button.next {
