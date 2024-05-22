@@ -38,18 +38,28 @@
             <br>
 
             <div class="box1">
-                <div class="service-container">
-                    <div class="drop">
-                        <h3>App-udvikling</h3>
-                        <img src="images/atom.png" alt="science icon">
+                <div class="drop" id="app-dev" style="height: 200px;">
+                    <img src="images/atom.png" alt="science icon">
+                    <h3>App-udvikling</h3>
+                    <a onclick="toggleSection(0)">↓</a>
+                    <div class="dropdown-content" id="ad" style="display: none;">
+                        <p>Der skal stå noget her!!</p>
                     </div>
-                    <div class="drop">
-                        <h3>Forretningsforståelse</h3>
-                        <img src="images/charts.png" alt="charts icon">
+                </div>
+                <div class="drop" id="business-understanding" style="height: 200px;">
+                    <img src="images/charts.png" alt="charts icon">
+                    <h3>Forretningsforståelse</h3>
+                    <a onclick="toggleSection(1)">↓</a> 
+                    <div class="dropdown-content" id="bu" style="display: none;">
+                        <p>Der skal stå noget her!!</p>
                     </div>
-                    <div class="drop">
-                        <h3>User experience</h3>
-                        <img src="images/happy.png" alt="smiling face icon">
+                </div>
+                <div class="drop" id="user-experience" style="height: 200px;">
+                    <img src="images/happy.png" alt="smiling face icon">
+                    <h3>Bruger oplevelse</h3>
+                    <a onclick="toggleSection(2)">↓</a>
+                    <div class="dropdown-content" id="ue" style="display: none;">
+                        <p>Der skal stå noget her!!</p>
                     </div>
                 </div>
             </div>
@@ -186,5 +196,6 @@
 
 <script src="javascript/videoloop.js" defer></script>
 <script src="javascript/slideshow.js" defer></script>
+<script src="javascript/dropdown.js" defer></script>
 
 </html>
