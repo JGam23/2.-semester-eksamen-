@@ -1,7 +1,7 @@
 
 const mybutton = document.getElementById("myBtn");
 
-const buttonMessages = ["Top", "Scroll Up", "To the Top"];
+const buttonMessages = ["Top", "Scroll Op", "Til Top"];
 const buttonStyles = {
   display: 'block',
   position: 'fixed',
