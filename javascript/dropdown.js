@@ -4,7 +4,6 @@ let sections = [
     { id: "user-experience", toggleId: "ue", dropped: false, heightCollapsed: "200px", heightExpanded: "350px" }
 ];
 
-// Add event listeners and loops
 document.addEventListener("DOMContentLoaded", function() {
     sections.forEach((section, index) => {
         let toggleElement = document.getElementById(section.toggleId);
