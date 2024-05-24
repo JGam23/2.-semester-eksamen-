@@ -23,8 +23,8 @@ function moveSlide(n) {
 }
 
 // Event listeners for buttons
-document.querySelector('.prev').addEventListener('click', () => moveSlide(-1));
-document.querySelector('.next').addEventListener('click', () => moveSlide(1));
+document.querySelector('.prev').addEventListener('click', () => moveSlide(-3));
+document.querySelector('.next').addEventListener('click', () => moveSlide(3));
 
 // Initialize the slideshow
 showSlides();
