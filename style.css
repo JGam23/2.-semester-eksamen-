@@ -1,4 +1,7 @@
+* {
+    margin: 0;
 
+}
 
 .header {
     position: relative;
@@ -8,7 +11,7 @@
     color: #fff;
     display: flex;
     align-items: center;
-    padding-left: 70px; 
+    padding-left: 6rem; 
     box-sizing: border-box; 
     background-size: cover;
     overflow: hidden;
@@ -28,6 +31,10 @@
     flex-direction: column;
     justify-content: center;
     padding-top: 0;
+    font-family: "space-grotesk-variable",sans-serif;
+    font-variation-settings: 'wght' 700;
+    font-weight: medium;
+      
 }
 
 .text-container img {
@@ -39,7 +46,8 @@
     font-size: 50px;
     color: #fff;
     margin: 0; 
-    padding-top: 10px; 
+    padding-top: 10px;
+     
 }
 
 .content {
@@ -60,6 +68,7 @@
 .text-box {
     display:block;
     text-align: left;
+    font-family: "space-grotesk-variable",sans-serif;
 }
 
 .text-box h2 {
@@ -67,6 +76,7 @@
     margin-top: 50px;
     text-align: left;
     color: #000000;
+    font-family: "space-grotesk-variable",sans-serif;
 }
 
 .video-box {
@@ -81,6 +91,7 @@
 }
 
 .box1{
+    font-family: "space-grotesk-variable",sans-serif;
     display: flex;
     background-color: #DCEBF7;
     width: 100%;
@@ -93,6 +104,7 @@
 
     grid-template-areas: 
     "drop1 drop2 drop3";
+    
 }
 #app-dev{ grid-area: drop1;}
 #business-understanding{ grid-area: drop2;}
@@ -125,12 +137,14 @@
     grid-area: img;
     margin: auto;
     margin-top: 20px;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
+    
 }
 .drop h3{
     grid-area: title;
     text-align: center;
+    margin-top: 1rem;
 }
 .drop a{
     grid-area: arrow;
@@ -222,8 +236,9 @@
     color: #000000;
     text-align: center;
     line-height: 30px;
-    font-size: 14px;
+    font-size: 12px;
     opacity: 0.8;
+    font-family: "space-grotesk-variable",sans-serif;
 }
 
 button.prev, button.next {
@@ -237,20 +252,35 @@ button.prev, button.next {
     z-index: 2;
 }
 button.prev {
-    left:10px;
+    left: 10px;
 }
 button.next {
     right: 10px;
 }
 
+
+/*
 .box3 {
     width: 100%;
-    height: 1200px;
+    height: 59rem;
     background-color: #1E1D56;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: left;
+    font-family: "space-grotesk-variable",sans-serif;
+}
+*/
+
+.box3 {
+    width: 100%;
+    height: 59rem;
+    background-color: #1E1D56;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    font-family: "space-grotesk-variable",sans-serif;
 }
 
 .box3 h2 {
@@ -333,7 +363,8 @@ button.next {
     bottom:0;
     right:0;
     margin-bottom: 20px;
-    margin-right: 20px;
+    margin-right: 18.5rem;
+    font-family: "space-grotesk-variable",sans-serif;
 }
 
 .button {
@@ -377,16 +408,19 @@ button.next {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    padding-left: 70px; 
-    padding-right: 70px;
+    padding-left: 95px; 
+    padding-right: 95px;
     box-sizing: border-box; 
     background-size: cover;
+
+
 }
 
 .footer-heading {
     font-size: 30px;
     margin:0 0 20px 0;
     color: #000000;
+    font-family: "space-grotesk-variable",sans-serif;
 }
 
 .footer-content {
@@ -399,6 +433,8 @@ button.next {
     font-size: 20px;
     margin: 0;
     line-height: 1.5;
+    font-family: "space-grotesk-variable",sans-serif;
+
 }
 
 .footer-large-text {
@@ -407,10 +443,11 @@ button.next {
 }
 
 .footer-logo{
-    width:400px;
+    margin-top: 77px;
+    width:300px;
     height:auto;
-    margin-right: 100px;
 }
+
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .header {
@@ -434,6 +471,7 @@ button.next {
 
     .header p {
         font-size: 30px;
+        font-family: "space-grotesk-variable",sans-serif;
     }
 
     .content {
@@ -450,6 +488,7 @@ button.next {
     .text-box h2 {
         font-size: 28px;
         margin-top: 20px;
+        font-family: "space-grotesk-variable",sans-serif;
     }
 
     .box1 {
@@ -541,6 +580,7 @@ button.next {
 
     .header p {
         font-size: 30px;
+        font-family: "space-grotesk-variable",sans-serif;
     }
 
     .content {
@@ -710,6 +750,10 @@ button.next {
         margin-bottom: 50px;
     }
 
+    .button-container {
+     margin-left: 10rem;
+    }
+
     .footer {
         height: auto;
         padding: 10px;
@@ -730,6 +774,7 @@ button.next {
         display: block;
     }
 
+    
     .image-container {
         display: block;
         transition: none; 
@@ -762,7 +807,9 @@ button.next {
         transform: translateY(-90%);
         padding: 5px; 
     }  
+    
 }
+    
 
 @media (min-width: 769px) and (max-width:1090px) {
     .header {
@@ -869,5 +916,3 @@ button.next {
     }
 
 }
-
-
